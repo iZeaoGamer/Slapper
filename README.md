@@ -4,14 +4,14 @@ The new home of Slapper, the NPC plugin for PocketMine-MP.
 ## UPDATED:
 I've now updated the plugin to make the plugin support spoons, so it should work with: GenisysPro, and Tesseract.
 
-UPDATED:
+## UPDATED:
 I've also fixed the server crash - bug.
 I bumped the API to 3.0.1. the API was incompatible with the versions of the server, so I updated it to 3.0.1 to make full-compatibilitie with it.
 
-NOTE:
+## NOTE:
 I am not coping other developer's plugins of hard work. i am trying to make them come back to life, and making them compatible with spoons again, such as tesseract and genisysPro.
 
-How to install?
+## How to install?
 go to the release tabs.
 Click on '1.3.5 - Server crash fix'
 Install it.
