@@ -526,7 +526,10 @@ class Main extends PluginBase implements Listener {
                                 return true;
                             }
                             $type = array_shift($args);
-                            $name = str_replace(["{color}", "{line}"], ["§", "\n"], trim(implode(" ", $args)));
+							$factionspro = $this->plugin->getServer()->getPluginManager()->getPlugin("FactionsPro");
+							if($factionspro instanceof FactionMain){
+								$ftopstr = $factionspro->sendListOfTop10FactionsTo($sender->getName());
+                            $name = str_replace(["{color}", "{line}", "{ftopstr}"], ["§", "\n", $ftopstr], trim(implode(" ", $args)));
                             if ($type === null || empty(trim($type))) {
                                 $sender->sendMessage($this->prefix . "Please enter an entity type.");
                                 return true;
