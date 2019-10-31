@@ -155,7 +155,7 @@ class Main extends PluginBase implements Listener {
      *
      * @return bool
      */
-    public function onCommand(CommandSender $sender, Command $command, string $label, array $args): bool {
+    public function onCommand(CommandSender $sender, Command $command, $label, array $args) {
         switch (strtolower($command->getName())) {
             case "nothing":
                 return true;
